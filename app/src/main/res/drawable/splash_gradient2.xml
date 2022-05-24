@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Kartika Aghni Safitri | 10119249 | IF6| 15 Mei 2022 -->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:angle="90"
+        android:startColor="@color/light_turquoist"
+        android:centerColor="@color/cardview_light_background"
+        android:endColor="@color/cardview_light_background"/>
+</shape>

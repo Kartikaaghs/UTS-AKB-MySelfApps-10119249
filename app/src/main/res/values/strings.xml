@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Myself Apps</string>
+
+    <string name="header1">Lets get Started!</string>
+    <string name="header2">Get to know myself \nmore</string>
+    <string name="header3">The Ideal Life</string>
+
+    <string name="home">Home</string>
+    <string name="daily">Daily</string>
+    <string name="gallery">Gallery</string>
+    <string name="media">Media</string>
+    <string name="profile">Profile</string>
+    <string name="desc">Deskripsi</string>
+
+    <string name="nama">Kartika Aghni Safitri</string>
+    <string name="description">Hello my name is\nKartika Aghni Safitri,\ni\'m currently studying at\ncomputer university</string>
+    <string name="description1">Hi! I am Kartika, student from Indonesia Computer University Informatics Engineering Faculty Engineering and Computer Science</string>
+    <string name="hobby">Hobby</string>
+    <string name="listeningmusic">Listening Music</string>
+    <string name="game">Gaming</string>
+    <string name="watch">Watch\nMovies</string>
+    <string name="interest">Interest</string>
+    <string name="music">Music</string>
+    <string name="makeup">Make Up</string>
+    <string name="burger">Burger</string>
+    <string name="coffee">Coffee</string>
+    <string name="games">Games</string>
+    <string name="study">Study</string>
+    <string name="wakeup">Wake Up</string>
+    <string name="eat">Eating</string>
+    <string name="clean">Cleaning</string>
+    <string name="quality_time">Quality Time</string>
+    <string name="sleep">Sleep</string>
+
+
+</resources>

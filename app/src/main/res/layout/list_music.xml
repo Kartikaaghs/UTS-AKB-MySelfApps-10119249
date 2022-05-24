@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="18dp"
+    android:paddingTop="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/bg1"
+    android:paddingRight="18dp"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:id="@+id/img_list_music"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/fiji_blue"
+        android:contentDescription="TODO" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/judul_music"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Content"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/penyanyi_music"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deskripsi"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+</LinearLayout>

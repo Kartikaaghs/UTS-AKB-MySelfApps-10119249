@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp">
+
+        <View
+            android:id="@+id/bg1"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="@drawable/bg_lightturquoist_5rad"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--//Belum ada photonya-->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/photo"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/tika"
+            android:theme="@style/customRoundedImage"
+            app:layout_constraintStart_toStartOf="@id/bg1"
+            app:layout_constraintTop_toTopOf="@id/bg1" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="center"
+            android:text="@string/description"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/hobby"
+            app:layout_constraintEnd_toEndOf="@id/bg1"
+            app:layout_constraintStart_toEndOf="@id/photo"
+            app:layout_constraintTop_toBottomOf="@id/bg1" />
+
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="@string/nama"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/bg1"
+            app:layout_constraintEnd_toEndOf="@id/bg1"
+            app:layout_constraintStart_toEndOf="@id/hobby"
+            app:layout_constraintTop_toTopOf="@id/bg1" />
+
+        <TextView
+            android:id="@+id/hobby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hobby"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/description" />
+
+        <View
+            android:id="@+id/bg2"
+            android:layout_width="match_parent"
+            android:layout_height="149dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_lightturquoist_40rad"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/hobby" />
+
+        <TextView
+            android:id="@+id/listeningmusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/icon_listeningmusic"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/listeningmusic"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/watch"
+            app:layout_constraintEnd_toStartOf="@id/gaming"
+            app:layout_constraintStart_toStartOf="@id/bg2"
+            app:layout_constraintTop_toTopOf="@id/bg2" />
+
+        <TextView
+            android:id="@+id/gaming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/icon_game"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/game"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/bg2"
+            app:layout_constraintStart_toEndOf="@id/listeningmusic"
+            app:layout_constraintTop_toTopOf="@id/listeningmusic" />
+
+        <TextView
+            android:id="@+id/interest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:text="@string/interest"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bg2" />
+
+        <TextView
+            android:id="@+id/watch"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/icon_movie"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="center"
+            android:text="@string/watch"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/bg2"
+            app:layout_constraintEnd_toEndOf="@id/bg2"
+            app:layout_constraintStart_toStartOf="@id/bg2"
+            app:layout_constraintTop_toBottomOf="@id/listeningmusic" />
+
+        <View
+            android:id="@+id/bg3"
+            android:layout_width="match_parent"
+            android:layout_height="149dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_lightturquoist_40rad"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/interest" />
+
+        <TextView
+            android:id="@+id/music"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_music"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="center"
+            android:text="@string/music"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/business"
+            app:layout_constraintEnd_toStartOf="@id/makeup"
+            app:layout_constraintStart_toStartOf="@id/bg3"
+            app:layout_constraintTop_toTopOf="@id/bg3" />
+
+        <TextView
+            android:id="@+id/business"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_burger"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="center"
+            android:text="@string/burger"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/stock"
+            app:layout_constraintEnd_toStartOf="@id/makeup"
+            app:layout_constraintStart_toStartOf="@id/bg3"
+            app:layout_constraintTop_toBottomOf="@id/music" />
+
+        <TextView
+            android:id="@+id/makeup"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_makeup"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="center"
+            android:text="@string/makeup"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/bg3"
+            app:layout_constraintStart_toEndOf="@id/music"
+            app:layout_constraintTop_toTopOf="@id/music" />
+
+        <TextView
+            android:id="@+id/code"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_coffee"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="center"
+            android:text="@string/coffee"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/business"
+            app:layout_constraintEnd_toEndOf="@id/bg3"
+            app:layout_constraintStart_toEndOf="@id/music"
+            app:layout_constraintTop_toTopOf="@id/business" />
+
+        <TextView
+            android:id="@+id/stock"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_games"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="center"
+            android:text="@string/games"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/bg3"
+            app:layout_constraintEnd_toEndOf="@id/bg3"
+            app:layout_constraintStart_toStartOf="@id/bg3"
+            app:layout_constraintTop_toBottomOf="@id/business" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
